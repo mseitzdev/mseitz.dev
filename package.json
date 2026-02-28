@@ -1,0 +1,25 @@
+{
+  "name": "ms_portfolio",
+  "version": "1.0.0",
+  "description": "Mitchell Seitz Portfolio - Eleventy Static Site",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -rf _site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mseitzdev/MS_Portfolio.git"
+  },
+  "keywords": ["portfolio", "eleventy", "static-site"],
+  "author": "Mitchell Seitz <mseitz@mseitz.dev>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mseitzdev/MS_Portfolio/issues"
+  },
+  "homepage": "https://github.com/mseitzdev/MS_Portfolio#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

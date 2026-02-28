@@ -1,0 +1,71 @@
+---
+layout: layouts/base.njk
+title: Portfolio Website (Eleventy)
+---
+
+<main class="information">
+
+    <div class="mainbox">
+
+        <h1 class="pagetitle"> Developer Portfolio (Eleventy Version) </h1>
+
+        <br>
+        <div style="text-align: center;">
+            <img src="/webDevelopment/eleventyScreenshot.png" alt="Screenshot of the Eleventy version of this portfolio being built with Claude Code." style="max-width: 90%; max-height: 450px">
+            <h5> Building this version of the portfolio with Claude Code </h5>
+        </div>
+        <br>
+
+        <p class="paragraphStandard">
+            This is the version of the portfolio you're looking at right now.
+            After hand-coding the
+            <a href="/webDevelopment/mseitzDotDev/">original PHP version</a>
+            from scratch, I decided to migrate the site to
+            <a href="https://www.11ty.dev/">Eleventy (11ty)</a>,
+            a static site generator. This allowed me to remove the PHP dependency
+            entirely while keeping the same design and functionality.
+            <br><br>
+            The migration involved replacing PHP includes with Nunjucks templates
+            and partials, setting up a proper build pipeline, and organizing the
+            project with a clean source directory structure. The site's layout system
+            uses a base template with reusable partials for the menu and social links,
+            and global site data is managed through a JavaScript data file rather than
+            being hardcoded across pages.
+            <br><br>
+            The visual design, including the Particles.js background, goldenrod color
+            scheme, and responsive layout, carried over from the PHP version. The key
+            improvements are under the hood — no server-side language required, faster
+            page loads as static HTML, and a much better development experience with
+            hot reloading and a clean project structure.
+            <br><br>
+            This is also my first AI-assisted coding project, built with
+            <a href="https://claude.ai/claude-code">Claude Code</a>.
+            I used Claude as a development partner throughout the migration and
+            site updates, from converting PHP templates to Nunjucks, to restructuring
+            the project, to adding new pages and content. It was a great way to
+            experience AI-assisted development firsthand while still maintaining
+            creative control over the design and direction of the site.
+            <br><br>
+        </p>
+
+        <h2 class="pagetitle">What changed in the migration?</h2>
+        <br>
+
+        <p class="paragraphStandard">
+            <br>1: PHP includes replaced with Nunjucks templates and partials.
+            <br>2: Dynamic copyright year handled via a JavaScript data file instead of PHP's date().
+            <br>3: Project restructured with a dedicated src/ directory, layouts, and includes.
+            <br>4: Build output generates clean static HTML — no server-side processing needed.
+            <br>5: Development workflow improved with Eleventy's live reload server.
+            <br><br>
+        </p>
+
+        <h1>
+            <a href="https://github.com/mseitzdev/MS_Portfolio">
+                See the code on my Github!
+            </a>
+        </h1>
+
+    </div>
+
+</main>
