@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<!-- the head section -->
+<head>
+
+    <!-- Tab icon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/icon.ico">
+
+    <!-- Generating Page title -->
+    <title>{{ title }} - {{ site.title }}</title>
+
+    <style>
+        /*Linking in the main.css style file*/
+        {% include "css/main.css" %}
+    </style>
+
+</head>
+
+<!-- starting the body -->
+<body>
+
+<!-- the header section -->
+<header style="display: flex; z-index: 1;">
+
+   <!-- menu button -->
+   {% include "partials/menu.njk" %}
+
+    <!-- Div to surround the logo and link -->
+    <div class="homeLogo">
+        <!-- website logo inside link to home -->
+        <a href="/">
+            <img src="/assets/images/msportlogo.png" class="logo">
+        </a>
+    </div>
+
+</header>
+
+<!-- bringing particles effect in -->
+<div id="particles-js"> </div>
+<script type="text/javascript" src="/assets/js/particles/particles.js"></script>
+<script type="text/javascript" src="/assets/js/particles/app.js"></script>
+
+<!-- Page content goes here -->
+{{ content | safe }}
+
+<!-- Footer for our pages, holds copyright information -->
+<footer>
+    <div class="copyright">
+        &copy; {{ site.currentYear }} {{ site.author }}
+    </div>
+</footer>
+
+</body>
+</html>

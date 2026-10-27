@@ -1,0 +1,40 @@
+---
+layout: layouts/base.njk
+title: About Me
+---
+
+<main class="information">
+
+    <div class="mainbox">
+
+        <h1 class="pagetitle">About Me</h1>
+
+        <div style="text-align: center;">
+            <img src="/about/me.png" alt="Portrait of Mitchell Seitz" style="max-width: 90%; max-height: 360px; border-radius: 50%;">
+            <h5>Photo by <a href="https://vivian-patruno.squarespace.com/">Vivian Patruno</a></h5>
+        </div>
+        <br>
+
+        <p class="paragraphStandard">
+            I'm Mitchell Seitz. I build web and Android projects, with an interest
+            in interface design and practical software development. I enjoy turning
+            ideas into working applications and learning through hands-on projects.
+            <br><br>
+            This portfolio brings together selected work, implementation details,
+            and lessons learned along the way. Explore my
+            <a href="/webDevelopment/">web development projects</a> and
+            <a href="/androidApps/">Android apps</a>, or browse the source code on
+            <a href="{{ site.github }}">GitHub</a>.
+        </p>
+
+        <br>
+        <h2 class="pagetitle">Get in touch</h2>
+        {% include "partials/socialLinks.njk" %}
+        <p class="paragraphStandard">
+            Connect with me on <a href="{{ site.linkedin }}">LinkedIn</a>
+            or email <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+        </p>
+
+    </div>
+
+</main>

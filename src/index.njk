@@ -1,0 +1,48 @@
+---
+layout: layouts/base.njk
+title: Home
+---
+
+<!--
+
+Index.njk, the main file for my portfolio.
+
+Programmed by Mitchell Seitz, March 6 2024.
+
+Home page for my developer portfolio.
+
+-->
+
+<main class="information">
+
+    <!-- Home page -->
+    <div class="mainbox">
+
+        <h1 class="pagetitle">Welcome to my portfolio!</h1>
+
+        <!-- Social Media Links-->
+        {% include "partials/socialLinks.njk" %}
+        <p class = "paragraphStandard">
+
+            I'm Mitchell Seitz. I build web and Android projects with a focus on
+            practical functionality and thoughtful interface design. Explore my
+            <a href="/webDevelopment/">web development projects</a>,
+            <a href="/androidApps/">Android apps</a>, or
+            <a href="/about/">learn more about my work</a>.
+            <br><br>
+            If you want to see some of my projects, check out the menu at the
+            top left or head to
+            <a href="{{ site.github }}">My GitHub</a>,
+            and if you'd like to connect then head over to
+            <a href="{{ site.linkedin }}"> My LinkedIn </a>
+            or
+            <a href="mailto:{{ site.email }}">Email me</a>
+            at:
+            <br><br>
+        </p>
+
+        <b>{{ site.email }}</b>
+
+    </div>
+
+</main>
